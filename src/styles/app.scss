@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    color: rgb(100, 96, 96);
+}
+
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+h3,h4{
+    font-weight: 400;
+    color:grey;
+}
+.App{
+   transition: all 0.5s ease;
+}
+.library-active{
+    margin-left: 20rem;
+}
+
+.light{
+    background-color: white;
+    color: black
+    svg{
+        color: black;
+    }
+    transition: all 0.3s ease;
+}
+.dark{
+    background-color: black;
+    color: white;
+    svg{
+        color: white;
+    }
+    transition: all 0.3s ease;
+}
+
+@import './song';
+@import './player';
+@import './library';
+@import './nav';
